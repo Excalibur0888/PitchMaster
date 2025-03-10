@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fantasy Cricket Rules - PitchMaster">
+    <title>Rules - PitchMaster</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/"><p>PitchMaster</p></a>
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="rules.html" class="active">Rules</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+    <section class="page-banner">
+        <div class="container">
+            <h1 class="fade-in">Fantasy Cricket Rules</h1>
+            <p class="slide-up">Understanding how to play and win</p>
+        </div>
+    </section>
+
+    <section class="rules-intro-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image slide-in-left">
+                    <img src="images/rules.jpg" alt="Fantasy Cricket Rules"/>
+                </div>
+                <div class="about-text slide-in-right">
+                    <h2>How Fantasy Cricket Works</h2>
+                    <p>Fantasy cricket is a game where participants assemble virtual teams of real cricket players and score points based on those players' actual statistical performance in real matches.</p>
+                    <p>At PitchMaster, we've created an exciting platform that allows cricket fans to test their knowledge and strategy while competing for amazing point rewards.</p>
+                    <p>Whether you're a cricket expert or just getting started, our comprehensive rules will help you understand how to play and maximize your chances of winning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="container">
+            <h2 class="section-title fade-in">PitchMaster Rules at a Glance</h2>
+            <div class="stats-grid">
+                <div class="stat-card slide-in-left">
+                    <div class="stat-number" data-value="11">11</div>
+                    <div class="stat-label">Players Per Team</div>
+                </div>
+                <div class="stat-card slide-up">
+                    <div class="stat-number" data-value="100">100</div>
+                    <div class="stat-label">Credits Per Team</div>
+                </div>
+                <div class="stat-card slide-up">
+                    <div class="stat-number" data-value="2">2x</div>
+                    <div class="stat-label">Captain Points Multiplier</div>
+                </div>
+                <div class="stat-card slide-in-right">
+                    <div class="stat-number" data-value="1.5">1.5x</div>
+                    <div class="stat-label">Vice-Captain Points Multiplier</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-creation-section">
+        <div class="container">
+            <h2 class="section-title fade-in">1. Team Creation</h2>
+            <div class="rules-grid">
+                <div class="rule-card slide-in-left">
+                    <div class="rule-icon">
+                        <img src="images/cricket-bat.svg" alt="Team Composition Icon" class="svg-icon">
+                    </div>
+                    <h3>Team Composition</h3>
+                    <p>Each fantasy team must consist of 11 players including:</p>
+                    <ul>
+                        <li>1-4 Wicket-keepers</li>
+                        <li>3-6 Batsmen</li>
+                        <li>1-4 All-rounders</li>
+                        <li>3-6 Bowlers</li>
+                    </ul>
+                    <p>You must select players from both teams playing in the match.</p>
+                </div>
+                <div class="rule-card slide-up">
+                    <div class="rule-icon">
+                        <img src="images/trophy.svg" alt="Captain Icon" class="svg-icon">
+                    </div>
+                    <h3>Captain and Vice-Captain</h3>
+                    <p>You must select one player as your team's Captain and one as Vice-Captain:</p>
+                    <ul>
+                        <li>Captain earns 2x points</li>
+                        <li>Vice-Captain earns 1.5x points</li>
+                    </ul>
+                    <p>Choose these roles strategically as they can significantly impact your total score.</p>
+                </div>
+                <div class="rule-card slide-in-right">
+                    <div class="rule-icon">
+                        <img src="images/stats.svg" alt="Credit System Icon" class="svg-icon">
+                    </div>
+                    <h3>Credit System</h3>
+                    <p>Each player is assigned a credit value based on their past performance and current form. You have a total of 100 credits to build your team, so choose wisely!</p>
+                    <p>Top players will cost more credits, requiring you to balance star players with value picks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="scoring-system-section">
+        <div class="container">
+            <h2 class="section-title fade-in">2. Scoring System</h2>
+            <p class="section-description text-center slide-up">Points are awarded based on the actual performance of your selected players in real matches. Understanding our scoring system is key to building winning teams.</p>
+            
+            <div class="scoring-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="batting">Batting Points</button>
+                    <button class="tab-button" data-tab="bowling">Bowling Points</button>
+                    <button class="tab-button" data-tab="fielding">Fielding Points</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="tab-pane active" id="batting">
+                        <div class="rule-item slide-up">
+                            <h4>Batting Points</h4>
+                            <table class="rules-table">
+                                <thead>
+                                    <tr>
+                                        <th>Action</th>
+                                        <th>Points</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Run scored</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Boundary bonus</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Six bonus</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>30 run bonus</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Half-century bonus</td>
+                                        <td>8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Century bonus</td>
+                                        <td>16</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Duck (batsmen & all-rounders)</td>
+                                        <td>-2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="bowling">
+                        <div class="rule-item slide-up">
+                            <h4>Bowling Points</h4>
+                            <table class="rules-table">
+                                <thead>
+                                    <tr>
+                                        <th>Action</th>
+                                        <th>Points</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Wicket (excluding run-out)</td>
+                                        <td>25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>LBW/Bowled bonus</td>
+                                        <td>8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3 wicket bonus</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4 wicket bonus</td>
+                                        <td>8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5 wicket bonus</td>
+                                        <td>16</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maiden over</td>
+                                        <td>12</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="fielding">
+                        <div class="rule-item slide-up">
+                            <h4>Fielding Points</h4>
+                            <table class="rules-table">
+                                <thead>
+                                    <tr>
+                                        <th>Action</th>
+                                        <th>Points</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Catch</td>
+                                        <td>8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3 catch bonus</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Stumping</td>
+                                        <td>12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Run-out (direct hit)</td>
+                                        <td>12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Run-out (thrower)</td>
+                                        <td>6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Run-out (catcher)</td>
+                                        <td>6</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contest-types-section">
+        <div class="container">
+            <h2 class="section-title fade-in">3. Contest Types</h2>
+            <div class="how-it-works">
+                <div class="steps-container">
+                    <div class="step slide-in-left">
+                        <div class="step-number">1</div>
+                        <h3 class="step-title">Head-to-Head Contests</h3>
+                        <p class="step-description">Compete directly against one opponent. The higher-scoring team wins the entire point pool.</p>
+                    </div>
+                    <div class="step slide-up">
+                        <div class="step-number">2</div>
+                        <h3 class="step-title">Leagues</h3>
+                        <p class="step-description">Join contests with multiple participants. Points are distributed based on your rank in the final standings.</p>
+                    </div>
+                    <div class="step slide-up">
+                        <div class="step-number">3</div>
+                        <h3 class="step-title">Mega Contests</h3>
+                        <p class="step-description">Large-scale contests with thousands of participants and significant point pools. These contests typically have a tiered point reward structure.</p>
+                    </div>
+                    <div class="step slide-in-right">
+                        <div class="step-number">4</div>
+                        <h3 class="step-title">Practice Contests</h3>
+                        <p class="step-description">Free contests that allow you to practice your skills without risking any points.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="important-rules-section">
+        <div class="container">
+            <h2 class="section-title fade-in">4. Important Rules</h2>
+            <div class="rules-grid">
+                <div class="rule-card slide-in-left">
+                    <div class="rule-icon">
+                        <img src="images/clock.svg" alt="Team Modification Icon" class="svg-icon">
+                    </div>
+                    <h3>Team Modification</h3>
+                    <p>You can modify your team until the deadline (typically the match start time). After the deadline, no changes are allowed.</p>
+                    <p>Make sure to check player availability and match conditions before finalizing your team.</p>
+                </div>
+                <div class="rule-card slide-up">
+                    <div class="rule-icon">
+                        <img src="images/stats.svg" alt="Multiple Teams Icon" class="svg-icon">
+                    </div>
+                    <h3>Multiple Teams</h3>
+                    <p>You can create multiple teams for the same match, but each team must be unique and can only be entered once per contest.</p>
+                    <p>Creating multiple teams allows you to try different strategies and increase your chances of winning.</p>
+                </div>
+                <div class="rule-card slide-up">
+                    <div class="rule-icon">
+                        <img src="images/secure.svg" alt="Cancelled Matches Icon" class="svg-icon">
+                    </div>
+                    <h3>Cancelled/Abandoned Matches</h3>
+                    <p>If a match is cancelled or abandoned, all related contests will be cancelled and entry fees refunded.</p>
+                    <p>In case of Duckworth-Lewis method being applied, points will be awarded based on the official result.</p>
+                </div>
+                <div class="rule-card slide-in-right">
+                    <div class="rule-icon">
+                        <img src="images/shield.svg" alt="Eligibility Icon" class="svg-icon">
+                    </div>
+                    <h3>Eligibility</h3>
+                    <p>You must be at least 18 years old to participate in paid contests. Fantasy cricket may be restricted in some states - please check your local laws.</p>
+                    <p>PitchMaster reserves the right to verify your identity and location before processing withdrawals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fair-play-section">
+        <div class="container">
+            <h2 class="section-title fade-in">Fair Play Policy</h2>
+            <p class="section-description text-center slide-up">At PitchMaster, we are committed to maintaining a fair and enjoyable environment for all users. We have a strict fair play policy that all players must adhere to.</p>
+            
+            <div class="fair-play-grid">
+                <div class="fair-play-card slide-in-left">
+                    <div class="fair-play-icon">
+                        <img src="images/handshake.svg" alt="Multiple Accounts Icon" class="svg-icon">
+                    </div>
+                    <h3>No Multiple Accounts</h3>
+                    <p>Creating or using multiple accounts is strictly prohibited. Each user may only have one account on the platform.</p>
+                </div>
+                <div class="fair-play-card slide-up">
+                    <div class="fair-play-icon">
+                        <img src="images/community.svg" alt="Collusion Icon" class="svg-icon">
+                    </div>
+                    <h3>No Collusion</h3>
+                    <p>Collusion between players to gain an unfair advantage is not allowed. This includes team sharing and coordinated contest entries.</p>
+                </div>
+                <div class="fair-play-card slide-up">
+                    <div class="fair-play-icon">
+                        <img src="images/innovation.svg" alt="Automation Icon" class="svg-icon">
+                    </div>
+                    <h3>No Automation</h3>
+                    <p>Using automated scripts, bots, or any software to create teams or enter contests is prohibited.</p>
+                </div>
+                <div class="fair-play-card slide-in-right">
+                    <div class="fair-play-icon">
+                        <img src="images/shield.svg" alt="Fair Play Icon" class="svg-icon">
+                    </div>
+                    <h3>Fair Play Commitment</h3>
+                    <p>Violation of our fair play policy may result in disqualification from contests, forfeiture of winnings, and/or permanent suspension from the platform.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title fade-in">Frequently Asked Questions</h2>
+            <div class="faq-container slide-up">
+                <div class="faq-item">
+                    <div class="faq-question">How do I create my first fantasy cricket team?</div>
+                    <div class="faq-answer">
+                        <p>To create your first team, select an upcoming match, choose 11 players within the 100 credit limit, select a captain and vice-captain, and then enter a contest. Make sure to follow the team composition rules (1-4 wicket-keepers, 3-6 batsmen, 1-4 all-rounders, and 3-6 bowlers).</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Can I change my team after the match starts?</div>
+                    <div class="faq-answer">
+                        <p>No, you cannot make any changes to your team after the match starts. All team selections must be finalized before the official match start time.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How are points calculated in case of a rain-affected match?</div>
+                    <div class="faq-answer">
+                        <p>In rain-affected matches where the Duckworth-Lewis method is applied, points are awarded based on the official statistics of the match. If a match is completely abandoned without any play, all related contests are cancelled and entry fees are refunded.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">When are winnings credited to my account?</div>
+                    <div class="faq-answer">
+                        <p>Winnings are typically credited to your account within 1-2 hours after the match result is officially declared. For tournaments spanning multiple days, winnings are credited after the completion of the entire tournament.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	</main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="/"><h2>PitchMaster</h2></a>
+                    <p>The premier fantasy cricket destination.</p>
+										<div class="footer-badges">
+											<a href="https://gamcare.org.uk/" target="_blank"><img src="images/6.png" alt="Gamcare"/></a>
+											<img src="images/18.png" alt="Gambleaware"/>
+										</div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                            <li><a href="rules.html">Rules</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Connect With Us</h3>
+                        <div class="social-icons">
+                            <a href="contact.html" class="social-icon">FB</a>
+                            <a href="contact.html" class="social-icon">TW</a>
+                            <a href="contact.html" class="social-icon">IG</a>
+                            <a href="contact.html" class="social-icon">YT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PitchMaster. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 

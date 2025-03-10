@@ -1,0 +1,509 @@
+/* 
+* CricketFantasy - Responsive Stylesheet
+* Author: CricketFantasy Team
+* Version: 1.0
+*/
+
+/* ===== Media Queries ===== */
+
+/* Large Devices (Desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .hero h2 {
+        font-size: 4rem;
+    }
+
+    .feature-grid,
+    .values-grid,
+    .team-grid,
+    .achievements-grid,
+    .stats-grid,
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .partners-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .steps-container {
+        flex-wrap: wrap;
+    }
+    
+    .step {
+        flex: 0 0 50%;
+        margin-bottom: 4rem;
+    }
+}
+
+/* Medium Devices (Tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    html {
+        font-size: 60%;
+    }
+
+    .container {
+        max-width: 720px;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--light-text);
+        box-shadow: var(--box-shadow);
+        padding: 2rem;
+        z-index: 99;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        margin: 1rem 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .matches-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .download-app .container {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .download-content, .app-image {
+        flex: 0 0 100%;
+        text-align: center;
+    }
+
+    .app-buttons {
+        justify-content: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .footer-links {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .about-grid {
+        flex-direction: column;
+    }
+
+    .about-image, .about-text {
+        flex: 0 0 100%;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .newsletter-input {
+        border-radius: var(--border-radius);
+    }
+    
+    .newsletter-btn {
+        border-radius: var(--border-radius);
+        width: 100%;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1.5rem;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .support-team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rules-grid,
+    .fair-play-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .tab-button {
+        font-size: 1.6rem;
+        padding: 1.2rem 1rem;
+    }
+}
+
+/* Small Devices (Landscape Phones, less than 768px) */
+@media (max-width: 767.98px) {
+    html {
+        font-size: 58%;
+    }
+
+    .container {
+        max-width: 540px;
+    }
+
+    .hero {
+        padding: 6rem 0;
+    }
+
+    .hero h2 {
+        font-size: 3.6rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .feature-grid,
+    .matches-grid,
+    .values-grid,
+    .team-grid,
+    .achievements-grid,
+    .stats-grid,
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+		.partners-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+    .footer-links {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .testimonial-card {
+        flex: 0 0 280px;
+    }
+    
+    .step {
+        flex: 0 0 100%;
+    }
+    
+    .steps-container::before {
+        display: none;
+    }
+
+    .support-team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-description {
+        font-size: 1.6rem;
+        margin-bottom: 3rem;
+    }
+
+    .rules-grid,
+    .fair-play-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tab-buttons {
+        flex-direction: column;
+    }
+    
+    .tab-button {
+        border-bottom: 1px solid var(--border-color);
+    }
+    
+    .tab-button.active {
+        border-bottom: 1px solid var(--border-color);
+        border-left: 3px solid var(--primary-color);
+    }
+    
+    .tab-content {
+        padding: 2rem 1.5rem;
+    }
+}
+
+/* Extra Small Devices (Portrait Phones, less than 576px) */
+@media (max-width: 575.98px) {
+    html {
+        font-size: 55%;
+    }
+
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    .section-title {
+        font-size: 2.8rem;
+    }
+
+    .hero h2 {
+        font-size: 3.2rem;
+    }
+
+    .hero p {
+        font-size: 1.8rem;
+    }
+
+    .phone-mockup {
+        width: 250px;
+        height: 500px;
+    }
+
+    .rules-table {
+        font-size: 1.4rem;
+    }
+
+    .rules-table th, .rules-table td {
+        padding: 0.8rem;
+    }
+    
+    .cta-title {
+        font-size: 3rem;
+    }
+    
+    .cta-description {
+        font-size: 1.6rem;
+    }
+    
+    .stat-number {
+        font-size: 4rem;
+    }
+    
+    .stat-label {
+        font-size: 1.6rem;
+    }
+
+    .support-member-image {
+        height: 180px;
+    }
+    
+    .support-member-info {
+        padding: 2rem;
+    }
+    
+    .support-member-info h3 {
+        font-size: 2rem;
+    }
+    
+    .support-member-title {
+        font-size: 1.5rem;
+    }
+
+    .rule-card,
+    .fair-play-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .rule-icon,
+    .fair-play-icon {
+        width: 5rem;
+        height: 5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .rule-card h3,
+    .fair-play-card h3 {
+        font-size: 2rem;
+    }
+}
+
+/* ===== Responsive Adjustments for Specific Components ===== */
+
+/* Responsive FAQ Items */
+@media (max-width: 767.98px) {
+    .faq-question {
+        font-size: 1.6rem;
+        padding: 1.5rem;
+    }
+
+    .faq-question::after {
+        font-size: 2rem;
+        right: 1.5rem;
+    }
+
+    .faq-answer {
+        padding: 0 1.5rem 1.5rem;
+    }
+}
+
+/* Responsive Form Elements */
+@media (max-width: 575.98px) {
+    .form-group label {
+        font-size: 1.5rem;
+    }
+
+    .form-group input, .form-group select, .form-group textarea {
+        padding: 1rem;
+    }
+
+    .btn {
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+    }
+}
+
+/* Responsive Tables */
+@media (max-width: 767.98px) {
+    .rules-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+/* Responsive Navigation Menu Animation */
+@media (max-width: 991.98px) {
+    .menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+}
+
+/* Responsive Legal Content */
+@media (max-width: 767.98px) {
+    .legal-section h2 {
+        font-size: 2.2rem;
+    }
+
+    .legal-subsection h3 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Responsive Team Member Images */
+@media (max-width: 575.98px) {
+    .member-image {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Responsive Testimonial Slider */
+@media (max-width: 575.98px) {
+    .testimonial-slider {
+        padding: 0 1rem;
+    }
+
+    .testimonial-card {
+        flex: 0 0 260px;
+    }
+}
+
+/* Responsive Blog Cards */
+@media (max-width: 575.98px) {
+    .blog-image {
+        height: 180px;
+    }
+    
+    .blog-content {
+        padding: 1.5rem;
+    }
+    
+    .blog-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* Responsive Newsletter Form */
+@media (max-width: 575.98px) {
+    .newsletter-title {
+        font-size: 2.4rem;
+    }
+    
+    .newsletter-description {
+        font-size: 1.5rem;
+    }
+}
+
+/* Responsive Timeline */
+@media (max-width: 767.98px) {
+    .timeline::before {
+        left: 2rem;
+    }
+    
+    .timeline-item {
+        padding-left: 5rem !important;
+        padding-right: 0 !important;
+    }
+    
+    .timeline-dot {
+        left: 2rem;
+    }
+    
+    .timeline-date {
+        position: relative;
+        top: auto;
+        left: auto !important;
+        right: auto !important;
+        text-align: left !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+    
+    .timeline-content::before {
+        display: none;
+    }
+}
+
+/* Responsive Support Team Section */
+@media (max-width: 991.98px) {
+    .support-team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .support-team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-description {
+        font-size: 1.6rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .support-member-image {
+        height: 180px;
+    }
+    
+    .support-member-info {
+        padding: 2rem;
+    }
+    
+    .support-member-info h3 {
+        font-size: 2rem;
+    }
+    
+    .support-member-title {
+        font-size: 1.5rem;
+    }
+} 
