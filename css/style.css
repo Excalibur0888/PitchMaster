@@ -53,6 +53,10 @@ body {
     background-color: var(--light-bg);
 }
 
+main {
+	overflow-x: hidden;
+}
+
 a {
     text-decoration: none;
     color: var(--primary-color);
@@ -281,6 +285,10 @@ header .container {
     display: flex;
     justify-content: center;
     gap: 2rem;
+}
+
+.cta-buttons a {
+	border: 1px solid #fff;
 }
 
 /* ===== Features Section ===== */
@@ -663,6 +671,7 @@ footer::before {
 
 .social-icon:hover {
     background-color: var(--primary-color);
+		color: #fff;
     transform: translateY(-3px);
 }
 
@@ -894,7 +903,6 @@ footer::before {
     display: block;
     font-size: 1.6rem;
     font-weight: 500;
-    margin-bottom: 0.8rem;
     color: var(--dark-text);
 }
 
@@ -1380,12 +1388,6 @@ footer::before {
     font-size: 1.8rem;
     margin-bottom: 3rem;
     opacity: 0.9;
-}
-
-.cta-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
 }
 
 .blog-section {

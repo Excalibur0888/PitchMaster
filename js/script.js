@@ -10,6 +10,30 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
     
+    // Date formatting function
+    function formatDate(date) {
+        const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        const day = date.getDate();
+        const month = months[date.getMonth()];
+        const year = date.getFullYear();
+        return `${month} ${day}, ${year}`;
+    }
+
+    // Update blog dates
+    const blogDates = document.querySelectorAll('.blog-date');
+    const today = new Date();
+    blogDates.forEach(dateElement => {
+        dateElement.textContent = formatDate(today);
+    });
+
+    // Update upcoming matches dates
+    const matchDates = document.querySelectorAll('.match-date');
+    matchDates.forEach((dateElement, index) => {
+        const matchDate = new Date();
+        matchDate.setDate(today.getDate() + (index + 1) * 2); // Add 2 days for each match
+        dateElement.textContent = `${formatDate(matchDate)} | ${dateElement.textContent.split('|')[1]}`;
+    });
+
     if (menuToggle) {
         menuToggle.addEventListener('click', function() {
             this.classList.toggle('active');
